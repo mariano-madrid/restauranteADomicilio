@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida Rápida a Domicilio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
+</head>
+<body>
+
+    <header>
+        <h1>Restaurante de Comida Rápida a Domicilio</h1>
+    </header>
+
+    <nav>
+        <a href="#services">Servicios</a>
+        <a href="#contact">Contacto</a>
+        <a href="#order">Realizar Pedido</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- Sección de Servicios -->
+        <section id="services" class="services">
+            <h2>Nuestros Servicios</h2>
+            <p>Selecciona el plato que más te guste y lo tendrás en la puerta de tu casa.</p>
+            <ul>
+                <li>Comida rápida: hamburguesas, pizzas, tacos, etc.</li>
+                <li>Especialidad: Comida a domicilio</li>
+                <li>Platos saludables y opciones vegetarianas</li>
+                <li>Entrega rápida en menos de 30 minutos</li>
+            </ul>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contact" class="contact">
+            <h2>Contáctanos</h2>
+            <p>Escríbenos para cualquier duda.</p>
+            <p>Email: comidarapida@restaurante.com</p>
+            <p>+34 968 123 456</p>
+            <p>Calle Macedonia 13, Murcia, España</p>
+        </section>
+
+        <!-- Formulario de Pedido -->
+        <section id="order" class="order-form">
+            <h2>Realiza tu Pedido</h2>
+            <form id="orderForm" action="#" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="order-details">Detalles del Pedido:</label>
+                <textarea id="order-details" name="order-details" rows="4" required></textarea>
+
+                <button type="submit">Enviar Pedido</button>
+            </form>
+            <!-- Mensaje de confirmación -->
+            <div id="confirmationMessage" style="display:none; margin-top: 20px;">
+                <p>¡Gracias por tu pedido! Nos pondremos en contacto contigo pronto.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>2024 Restaurante: Comida Rápida a Domicilio. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js" defer></script> <!-- Enlace al archivo JavaScript -->
+</body>
+</html>
